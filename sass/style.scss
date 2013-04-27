@@ -48,14 +48,14 @@ html, body {
     background-position:
       left 50% bottom $groundHeight,
       left (-($groundWidth * 12)) bottom 0px,
-      left (-($bushesWidth * 1)) bottom 0px,
+      left (-($bushesWidth * 1)) bottom $groundHeight,
       left (-($backWidth / 2)) bottom 0px;
   }
   100% {
     background-position:
       left 30% bottom $groundHeight,
       left (-($groundWidth * 24)) bottom 0px,
-      left (-($bushesWidth * 2)) bottom 0px,
+      left (-($bushesWidth * 2)) bottom $groundHeight,
       left (-$backWidth) bottom 0px;
   }
 }
