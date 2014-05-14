@@ -1,28 +1,23 @@
-@import "compass/reset";
+@import "compass/css3";
 
-$backWidth: 512px; $backHeight: 432px; // $backWidthRel: 100%; $backHeightRel: 100%;
-$bushesWidth: 508px; $bushesHeight: 79px; // $bushesWidthRel: 99.21%; $bushesHeightRel: 18.29%;
-$groundWidth: 68px; $groundHeight: 44px; // $groundWidthRel: 13.28%; $groundHeightRel: 5.55%;
-$marioWidth: 30px; $marioHeight: 54px; // $marioWidthRel: 9.3%; $marioHeightRel: 12.5%;
+$backWidth: 512px; $backHeight: 432px;
+$bushesWidth: 508px; $bushesHeight: 79px;
+$groundWidth: 68px; $groundHeight: 24px;
+$marioWidth: 30px; $marioHeight: 54px;
 
 html, body {
   height: 100%;
   width: 100%;
 }
 
-.mario {
+body {
   height: 100%;
   background-image:
-    url('../img/mario.gif'),
-    url('../img/ground.png'),
-    url('../img/bushes.png'),
-    url('../img/back.png');
+    url('http://portfolio.kageetai.net/mario/mario.gif'),
+    url('http://portfolio.kageetai.net/mario/ground.png'),
+    url('http://portfolio.kageetai.net/mario/bushes.png'),
+    url('http://portfolio.kageetai.net/mario/back.png');
   background-color: #F8E0B0;
-  //background-size:
-  //  $marioWidthRel $marioHeightRel,
-  //  $groundWidthRel $groundHeightRel,
-  //  $bushesWidthRel $bushesHeightRel,
-  //  $backWidthRel $backHeightRel;
   background-repeat:
     no-repeat,
     repeat-x,
