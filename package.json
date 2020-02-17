@@ -1,0 +1,25 @@
+{
+  "name": "mario-background-parallax",
+  "version": "1.0.0",
+  "description": "mario-background-parallax",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run sass && npm run sass -- -w & http-server",
+    "sass": "node-sass scss/style.scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kageetai/mario-background-parallax.git"
+  },
+  "author": "Kageetai.net",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kageetai/mario-background-parallax/issues"
+  },
+  "homepage": "https://github.com/Kageetai/mario-background-parallax#readme",
+  "devDependencies": {
+    "http-server": "^0.12.1",
+    "node-sass": "^4.13.1"
+  }
+}

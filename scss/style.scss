@@ -1,9 +1,11 @@
-@import "compass/css3";
-
-$backWidth: 512px; $backHeight: 432px;
-$bushesWidth: 508px; $bushesHeight: 79px;
-$groundWidth: 68px; $groundHeight: 24px;
-$marioWidth: 30px; $marioHeight: 54px;
+$backWidth: 512px;
+$backHeight: 432px;
+$bushesWidth: 508px;
+$bushesHeight: 79px;
+$groundWidth: 68px;
+$groundHeight: 24px;
+$marioWidth: 30px;
+$marioHeight: 54px;
 
 html, body {
   height: 100%;
@@ -12,45 +14,39 @@ html, body {
 
 body {
   height: 100%;
-  background-image:
-    url('http://portfolio.kageetai.net/mario/mario.gif'),
-    url('http://portfolio.kageetai.net/mario/ground.png'),
-    url('http://portfolio.kageetai.net/mario/bushes.png'),
-    url('http://portfolio.kageetai.net/mario/back.png');
+  background-image: url('/img/mario.gif'),
+  url('/img/ground.png'),
+  url('/img/bushes.png'),
+  url('/img/back.png');
   background-color: #F8E0B0;
-  background-repeat:
-    no-repeat,
-    repeat-x,
-    repeat-x,
-    repeat-x;
-  background-position:
-    left 30% bottom $groundHeight,
-    left 0px bottom 0px,
-    left 0px bottom $groundHeight,
-    left 0px bottom 0px;
+  background-repeat: no-repeat,
+  repeat-x,
+  repeat-x,
+  repeat-x;
+  background-position: left 30% bottom $groundHeight,
+  left 0px bottom 0px,
+  left 0px bottom $groundHeight,
+  left 0px bottom 0px;
   animation: back 15s infinite linear;
 }
 
 @keyframes back {
   0% {
-    background-position:
-      left 30% bottom $groundHeight,
-      left 0px bottom 0px,
-      left 0px bottom $groundHeight,
-      left 0px bottom 0px;
+    background-position: left 30% bottom $groundHeight,
+    left 0px bottom 0px,
+    left 0px bottom $groundHeight,
+    left 0px bottom 0px;
   }
   50% {
-    background-position:
-      left 50% bottom $groundHeight,
-      left (-($groundWidth * 12)) bottom 0px,
-      left (-($bushesWidth * 1)) bottom $groundHeight,
-      left (-($backWidth / 2)) bottom 0px;
+    background-position: left 50% bottom $groundHeight,
+    left (-($groundWidth * 12)) bottom 0px,
+    left (-($bushesWidth * 1)) bottom $groundHeight,
+    left (-($backWidth / 2)) bottom 0px;
   }
   100% {
-    background-position:
-      left 30% bottom $groundHeight,
-      left (-($groundWidth * 24)) bottom 0px,
-      left (-($bushesWidth * 2)) bottom $groundHeight,
-      left (-$backWidth) bottom 0px;
+    background-position: left 30% bottom $groundHeight,
+    left (-($groundWidth * 24)) bottom 0px,
+    left (-($bushesWidth * 2)) bottom $groundHeight,
+    left (-$backWidth) bottom 0px;
   }
 }
