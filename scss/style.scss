@@ -1,3 +1,7 @@
+$mario: "/img/mario.gif";
+$ground: "/img/ground.png";
+$bushes: "/img/bushes.png";
+$back: "/img/back.png";
 $backWidth: 512px;
 $backHeight: 432px;
 $bushesWidth: 508px;
@@ -11,12 +15,12 @@ html,
 body {
   height: 100%;
   width: 100%;
+  margin: 0;
 }
 
 body {
   height: 100%;
-  background-image: url("/img/mario.gif"), url("/img/ground.png"),
-    url("/img/bushes.png"), url("/img/back.png");
+  background-image: url($mario), url($ground), url($bushes), url($back);
   background-color: #f8e0b0;
   background-repeat: no-repeat, repeat-x, repeat-x, repeat-x;
   background-position: left 30% bottom $groundHeight, left 0 bottom 0,
