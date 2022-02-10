@@ -20,7 +20,7 @@
   "homepage": "https://github.com/Kageetai/mario-background-parallax#readme",
   "devDependencies": {
     "http-server": "^0.12.1",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "prettier": "1.19.1"
   }
 }
